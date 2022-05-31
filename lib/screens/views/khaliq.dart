@@ -1,16 +1,12 @@
-import 'package:abdulkhaliq/screens/khaliq10.dart';
 import 'package:abdulkhaliq/screens/khaliq3.dart';
 import 'package:abdulkhaliq/screens/khaliq5.dart';
-import 'package:abdulkhaliq/screens/khaliq6.dart';
-import 'package:abdulkhaliq/screens/khaliq7.dart';
-import 'package:abdulkhaliq/screens/khaliq8.dart';
-import 'package:abdulkhaliq/screens/khaliq9.dart';
 import 'package:abdulkhaliq/screens/views/khaliq2.dart';
 import 'package:abdulkhaliq/screens/views/khaliq1.dart';
 import 'package:abdulkhaliq/screens/views/khaliq4.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 
 class MyKhaliq extends StatelessWidget {
   const MyKhaliq({Key? key}) : super(key: key);
@@ -78,12 +74,8 @@ class MyKhaliq extends StatelessWidget {
                 height: 10,
               ),
             ),
-            const MyKhaliq5(),
-            const MyKhaliq6(),
-            const MyKhaliq7(),
-            const MyKhaliq8(),
-            const MyKhaliq9(),
-            const MyKhaliq10(),
+           const MyKhaliq5(),
+            
           ],
         ),
       ),
