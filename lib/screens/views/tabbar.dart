@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class MyKhaliq1 extends StatelessWidget {
-  const MyKhaliq1({Key? key}) : super(key: key);
-
+class Tabbar extends StatelessWidget {
+  const Tabbar({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Row(

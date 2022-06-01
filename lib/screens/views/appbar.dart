@@ -1,15 +1,14 @@
-import 'package:abdulkhaliq/screens/khaliq3.dart';
-import 'package:abdulkhaliq/screens/khaliq5.dart';
-import 'package:abdulkhaliq/screens/views/khaliq2.dart';
-import 'package:abdulkhaliq/screens/views/khaliq1.dart';
-import 'package:abdulkhaliq/screens/views/khaliq4.dart';
+import 'package:abdulkhaliq/screens/postcategories.dart';
+import 'package:abdulkhaliq/screens/usersimage.dart';
+import 'package:abdulkhaliq/screens/views/postbox.dart';
+import 'package:abdulkhaliq/screens/views/tabbar.dart';
+import 'package:abdulkhaliq/screens/views/stories.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
-class MyKhaliq extends StatelessWidget {
-  const MyKhaliq({Key? key}) : super(key: key);
+class Appbar extends StatelessWidget {
+  const Appbar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -52,30 +51,29 @@ class MyKhaliq extends StatelessWidget {
                 height: 15,
               ),
             ),
-            const MyKhaliq1(),
+            const Tabbar(),
             const Divider(
               thickness: 2,
             ),
-            const MyKhaliq2(),
+            const Postbox(),
             SizedBox(
               child: Container(
                 color: const Color(0XFFC9CCD1),
                 height: 10,
               ),
             ),
-            const MyKhaliq3(),
+            const Postcategories(),
             const Divider(
               thickness: 1,
             ),
-            const MyKhaliq4(),
+            const Stories(),
             SizedBox(
               child: Container(
                 color: const Color(0XFFC9CCD1),
                 height: 10,
               ),
             ),
-           const MyKhaliq5(),
-            
+            const UsersImage(),
           ],
         ),
       ),

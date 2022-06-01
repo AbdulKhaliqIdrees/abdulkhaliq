@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyKhaliq2 extends StatelessWidget {
-  const MyKhaliq2({Key? key}) : super(key: key);
+class Postbox extends StatelessWidget {
+  const Postbox({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

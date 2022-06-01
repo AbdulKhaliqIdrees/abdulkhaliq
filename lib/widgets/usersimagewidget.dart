@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class ReuseableScreen extends StatelessWidget {
-  const ReuseableScreen(
-      this.text1, this.text2, this.text3, this.text4, this.text5, this.image,
+class UsersImageWidget extends StatelessWidget {
+  const UsersImageWidget(this.idname, this.time, this.captions, this.like,
+      this.comments, this.image,
       {Key? key})
       : super(key: key);
-  final String text1;
-  final String text2;
-  final String text3;
-  final String text4;
-  final String text5;
+  final String idname;
+  final String time;
+  final String captions;
+  final String like;
+  final String comments;
   final String image;
 
   @override
@@ -25,13 +25,13 @@ class ReuseableScreen extends StatelessWidget {
               backgroundImage: AssetImage("assets/images/$image.jpg"),
             ),
             title: Text(
-              text1,
+              idname,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
               ),
             ),
-            subtitle: Text(text2),
+            subtitle: Text(time),
             trailing: Wrap(
               spacing: 20,
               children: [
@@ -47,7 +47,7 @@ class ReuseableScreen extends StatelessWidget {
             ),
           ),
           Text(
-            text3,
+            captions,
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
@@ -61,8 +61,8 @@ class ReuseableScreen extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text(text4),
-            trailing: Text(text5),
+            title: Text(like),
+            trailing: Text(comments),
           ),
           Divider(
             thickness: 1,
