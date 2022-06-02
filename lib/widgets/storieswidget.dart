@@ -6,13 +6,13 @@ class StoriesWidget extends StatelessWidget {
   final String name;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      child: Container(
-        height: 10,
-        width: 8,
-      ),
-    );
-    Container(
+    // return SizedBox(
+    //   child: Container(
+    //     height: 10,
+    //     width: 8,
+    //   ),
+    // );
+    return Container(
       height: 10,
       width: 150,
       child: Stack(

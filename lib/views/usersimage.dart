@@ -1,6 +1,6 @@
+import 'package:abdulkhaliq/models/users_image_model.dart';
 import 'package:abdulkhaliq/widgets/usersimagewidget.dart';
 import 'package:flutter/material.dart';
-import 'package:abdulkhaliq/models/usersimagemodel.dart';
 
 class UsersImage extends StatefulWidget {
   const UsersImage({Key? key}) : super(key: key);
@@ -38,8 +38,8 @@ class _MyKhaliq5State extends State<UsersImage> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      physics: NeverScrollableScrollPhysics(),
       shrinkWrap: true,
-      scrollDirection: Axis.vertical,
       itemCount: listname.length,
       itemBuilder: (BuildContext context, int index) {
         return UsersImageWidget(
